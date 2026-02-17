@@ -1,0 +1,392 @@
+16:47:19 **** Incremental Build of configuration Debug for project test ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:91:7: warning: unused variable 'update_state_downcount' [-Wunused-variable]
+   91 |   int update_state_downcount = 0;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:90:7: warning: unused variable 'animation_delay_down' [-Wunused-variable]
+   90 |   int animation_delay_down = 50;
+      |       ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:89:7: warning: unused variable 'animation_delay_up' [-Wunused-variable]
+   89 |   int animation_delay_up = 100;
+      |       ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\stoluzarov\Documents\stm32\projects\test\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test.elf
+ 
+arm-none-eabi-size   test.elf 
+arm-none-eabi-objdump -h -S  test.elf  > "test.list"
+   text	   data	    bss	    dec	    hex	filename
+   6076	     20	   1572	   7668	   1df4	test.elf
+Finished building: default.size.stdout
+ 
+Finished building: test.list
+ 
+16:47:22 **** Incremental Build of configuration Debug for project test ****
+make -j12 all 
+arm-none-eabi-size   test.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6076	     20	   1572	   7668	   1df4	test.elf
+Finished building: default.size.stdout
+ 
+16:47:59 **** Incremental Build of configuration Debug for project test ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:91:7: warning: unused variable 'update_state_downcount' [-Wunused-variable]
+   91 |   int update_state_downcount = 0;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:90:7: warning: unused variable 'animation_delay_down' [-Wunused-variable]
+   90 |   int animation_delay_down = 50;
+      |       ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:89:7: warning: unused variable 'animation_delay_up' [-Wunused-variable]
+   89 |   int animation_delay_up = 100;
+      |       ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\stoluzarov\Documents\stm32\projects\test\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test.elf
+ 
+arm-none-eabi-size   test.elf 
+arm-none-eabi-objdump -h -S  test.elf  > "test.list"
+   text	   data	    bss	    dec	    hex	filename
+   6016	     20	   1572	   7608	   1db8	test.elf
+Finished building: default.size.stdout
+ 
+Finished building: test.list
+ 
+17:46:23 **** Build of configuration Debug for project test ****
+make -j12 all 
+arm-none-eabi-size   test.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6016	     20	   1572	   7608	   1db8	test.elf
+Finished building: default.size.stdout
+ 
+17:48:20 **** Incremental Build of configuration Debug for project test ****
+make -j12 all 
+arm-none-eabi-size   test.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6016	     20	   1572	   7608	   1db8	test.elf
+Finished building: default.size.stdout
+ 
+17:50:25 **** Incremental Build of configuration Debug for project test ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:91:7: warning: unused variable 'update_state_downcount' [-Wunused-variable]
+   91 |   int update_state_downcount = 0;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:90:7: warning: unused variable 'animation_delay_down' [-Wunused-variable]
+   90 |   int animation_delay_down = 50;
+      |       ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:89:7: warning: unused variable 'animation_delay_up' [-Wunused-variable]
+   89 |   int animation_delay_up = 100;
+      |       ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\stoluzarov\Documents\stm32\projects\test\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test.elf
+ 
+arm-none-eabi-size   test.elf 
+arm-none-eabi-objdump -h -S  test.elf  > "test.list"
+   text	   data	    bss	    dec	    hex	filename
+   6016	     20	   1572	   7608	   1db8	test.elf
+Finished building: default.size.stdout
+ 
+Finished building: test.list
+ 
+17:51:18 **** Incremental Build of configuration Debug for project test ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:91:7: warning: unused variable 'update_state_downcount' [-Wunused-variable]
+   91 |   int update_state_downcount = 0;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:90:7: warning: unused variable 'animation_delay_down' [-Wunused-variable]
+   90 |   int animation_delay_down = 50;
+      |       ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:89:7: warning: unused variable 'animation_delay_up' [-Wunused-variable]
+   89 |   int animation_delay_up = 100;
+      |       ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\stoluzarov\Documents\stm32\projects\test\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test.elf
+ 
+arm-none-eabi-size   test.elf 
+arm-none-eabi-objdump -h -S  test.elf  > "test.list"
+   text	   data	    bss	    dec	    hex	filename
+   6016	     20	   1572	   7608	   1db8	test.elf
+Finished building: default.size.stdout
+ 
+Finished building: test.list
+ 
+17:54:40 **** Incremental Build of configuration Debug for project test ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:235:13: error: invalid storage class for function 'MX_GPIO_Init'
+  235 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:278:1: error: expected declaration or statement at end of input
+  278 | }
+      | ^
+../Core/Src/main.c:94:7: warning: unused variable 'count' [-Wunused-variable]
+   94 |   int count = 0;
+      |       ^~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:49:13: warning: 'MX_GPIO_Init' used but never defined
+   49 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:269:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  269 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:235:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  235 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:193:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  193 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+17:56:08 **** Incremental Build of configuration Debug for project test ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:94:7: warning: unused variable 'count' [-Wunused-variable]
+   94 |   int count = 0;
+      |       ^~~~~
+arm-none-eabi-gcc -o "test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\stoluzarov\Documents\stm32\projects\test\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test.elf
+ 
+arm-none-eabi-size   test.elf 
+arm-none-eabi-objdump -h -S  test.elf  > "test.list"
+   text	   data	    bss	    dec	    hex	filename
+   6016	     20	   1572	   7608	   1db8	test.elf
+Finished building: default.size.stdout
+ 
+Finished building: test.list
+ 
+17:56:56 **** Incremental Build of configuration Debug for project test ****
+make -j12 all 
+arm-none-eabi-size   test.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6016	     20	   1572	   7608	   1db8	test.elf
+Finished building: default.size.stdout
+ 
+17:58:36 **** Incremental Build of configuration Debug for project test ****
+make -j12 all 
+arm-none-eabi-size   test.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6016	     20	   1572	   7608	   1db8	test.elf
+Finished building: default.size.stdout
+ 
+17:59:27 **** Incremental Build of configuration Debug for project test ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:234:13: error: invalid storage class for function 'MX_GPIO_Init'
+  234 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:277:1: error: expected declaration or statement at end of input
+  277 | }
+      | ^
+../Core/Src/main.c:94:7: warning: unused variable 'count' [-Wunused-variable]
+   94 |   int count = 0;
+      |       ^~~~~
+../Core/Src/main.c:93:7: warning: unused variable 'prev_btn_state' [-Wunused-variable]
+   93 |   int prev_btn_state = GPIO_PIN_RESET;
+      |       ^~~~~~~~~~~~~~
+../Core/Src/main.c:92:7: warning: unused variable 'btn_state' [-Wunused-variable]
+   92 |   int btn_state = GPIO_PIN_RESET;
+      |       ^~~~~~~~~
+../Core/Src/main.c:91:7: warning: unused variable 'update_state_downcount' [-Wunused-variable]
+   91 |   int update_state_downcount = 0;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:90:7: warning: unused variable 'animation_delay_down' [-Wunused-variable]
+   90 |   int animation_delay_down = 50;
+      |       ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:89:7: warning: unused variable 'animation_delay_up' [-Wunused-variable]
+   89 |   int animation_delay_up = 100;
+      |       ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:88:11: warning: unused variable 'led_mask' [-Wunused-variable]
+   88 |   uint8_t led_mask = 0;
+      |           ^~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:49:13: warning: 'MX_GPIO_Init' used but never defined
+   49 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:268:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  268 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:234:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  234 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:192:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  192 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+17:59:43 **** Incremental Build of configuration Debug for project test ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:94:7: warning: unused variable 'count' [-Wunused-variable]
+   94 |   int count = 0;
+      |       ^~~~~
+../Core/Src/main.c:93:7: warning: unused variable 'prev_btn_state' [-Wunused-variable]
+   93 |   int prev_btn_state = GPIO_PIN_RESET;
+      |       ^~~~~~~~~~~~~~
+../Core/Src/main.c:92:7: warning: unused variable 'btn_state' [-Wunused-variable]
+   92 |   int btn_state = GPIO_PIN_RESET;
+      |       ^~~~~~~~~
+../Core/Src/main.c:91:7: warning: unused variable 'update_state_downcount' [-Wunused-variable]
+   91 |   int update_state_downcount = 0;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:90:7: warning: unused variable 'animation_delay_down' [-Wunused-variable]
+   90 |   int animation_delay_down = 50;
+      |       ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:89:7: warning: unused variable 'animation_delay_up' [-Wunused-variable]
+   89 |   int animation_delay_up = 100;
+      |       ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:88:11: warning: unused variable 'led_mask' [-Wunused-variable]
+   88 |   uint8_t led_mask = 0;
+      |           ^~~~~~~~
+arm-none-eabi-gcc -o "test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\stoluzarov\Documents\stm32\projects\test\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test.elf
+ 
+arm-none-eabi-size   test.elf 
+arm-none-eabi-objdump -h -S  test.elf  > "test.list"
+   text	   data	    bss	    dec	    hex	filename
+   6132	     20	   1572	   7724	   1e2c	test.elf
+Finished building: default.size.stdout
+ 
+Finished building: test.list
+ 
+18:02:12 **** Incremental Build of configuration Debug for project test ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:94:7: warning: unused variable 'count' [-Wunused-variable]
+   94 |   int count = 0;
+      |       ^~~~~
+arm-none-eabi-gcc -o "test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\stoluzarov\Documents\stm32\projects\test\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test.elf
+ 
+arm-none-eabi-size   test.elf 
+arm-none-eabi-objdump -h -S  test.elf  > "test.list"
+   text	   data	    bss	    dec	    hex	filename
+   6016	     20	   1572	   7608	   1db8	test.elf
+Finished building: default.size.stdout
+ 
+Finished building: test.list
+ 
+18:02:29 **** Incremental Build of configuration Debug for project test ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:94:7: warning: unused variable 'count' [-Wunused-variable]
+   94 |   int count = 0;
+      |       ^~~~~
+arm-none-eabi-gcc -o "test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\stoluzarov\Documents\stm32\projects\test\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test.elf
+ 
+arm-none-eabi-size   test.elf 
+arm-none-eabi-objdump -h -S  test.elf  > "test.list"
+   text	   data	    bss	    dec	    hex	filename
+   6016	     20	   1572	   7608	   1db8	test.elf
+Finished building: default.size.stdout
+ 
+Finished building: test.list
+ 
+18:03:51 **** Incremental Build of configuration Debug for project test ****
+make -j12 all 
+arm-none-eabi-size   test.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6016	     20	   1572	   7608	   1db8	test.elf
+Finished building: default.size.stdout
+ 
+18:06:26 **** Incremental Build of configuration Debug for project test ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:94:7: warning: unused variable 'count' [-Wunused-variable]
+   94 |   int count = 0;
+      |       ^~~~~
+arm-none-eabi-gcc -o "test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\stoluzarov\Documents\stm32\projects\test\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test.elf
+ 
+arm-none-eabi-size   test.elf 
+arm-none-eabi-objdump -h -S  test.elf  > "test.list"
+   text	   data	    bss	    dec	    hex	filename
+   6016	     20	   1572	   7608	   1db8	test.elf
+Finished building: default.size.stdout
+ 
+Finished building: test.list
+ 
+18:13:52 **** Incremental Build of configuration Debug for project test ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:94:7: warning: unused variable 'count' [-Wunused-variable]
+   94 |   int count = 0;
+      |       ^~~~~
+arm-none-eabi-gcc -o "test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\stoluzarov\Documents\stm32\projects\test\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test.elf
+ 
+arm-none-eabi-size   test.elf 
+arm-none-eabi-objdump -h -S  test.elf  > "test.list"
+   text	   data	    bss	    dec	    hex	filename
+   6016	     20	   1572	   7608	   1db8	test.elf
+Finished building: default.size.stdout
+ 
+Finished building: test.list
+ 
+18:17:32 **** Incremental Build of configuration Debug for project test ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:94:7: warning: unused variable 'count' [-Wunused-variable]
+   94 |   int count = 0;
+      |       ^~~~~
+arm-none-eabi-gcc -o "test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\stoluzarov\Documents\stm32\projects\test\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test.elf
+ 
+arm-none-eabi-size   test.elf 
+arm-none-eabi-objdump -h -S  test.elf  > "test.list"
+   text	   data	    bss	    dec	    hex	filename
+   6016	     20	   1572	   7608	   1db8	test.elf
+Finished building: default.size.stdout
+ 
+Finished building: test.list
+ 
+18:18:42 **** Incremental Build of configuration Debug for project test ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:94:7: warning: unused variable 'count' [-Wunused-variable]
+   94 |   int count = 0;
+      |       ^~~~~
+arm-none-eabi-gcc -o "test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\stoluzarov\Documents\stm32\projects\test\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test.elf
+ 
+arm-none-eabi-size   test.elf 
+arm-none-eabi-objdump -h -S  test.elf  > "test.list"
+   text	   data	    bss	    dec	    hex	filename
+   6016	     20	   1572	   7608	   1db8	test.elf
+Finished building: default.size.stdout
+ 
+Finished building: test.list
+ 
+18:19:03 **** Incremental Build of configuration Debug for project test ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:94:7: warning: unused variable 'count' [-Wunused-variable]
+   94 |   int count = 0;
+      |       ^~~~~
+arm-none-eabi-gcc -o "test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\stoluzarov\Documents\stm32\projects\test\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test.elf
+ 
+arm-none-eabi-size   test.elf 
+arm-none-eabi-objdump -h -S  test.elf  > "test.list"
+   text	   data	    bss	    dec	    hex	filename
+   6016	     20	   1572	   7608	   1db8	test.elf
+Finished building: default.size.stdout
+ 
+Finished building: test.list
+ 
