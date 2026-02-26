@@ -1,0 +1,62 @@
+#include "main.h"
+
+
+void blinking() {
+	if(HAL_GPIO_ReadPin (GPIOA, GPIO_PIN_0) == 0)
+	{
+	   /*Одновременное моргание*/
+	  HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14|GPIO_PIN_15);
+	  HAL_Delay(100);
+	}
+	else
+	{
+	  /*Поочередное моргание*/
+	  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14|GPIO_PIN_15, GPIO_PIN_RESET);
+	  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_SET);
+	  HAL_Delay(500);
+	  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_RESET);
+	  HAL_Delay(500);
+	  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, GPIO_PIN_SET);
+	  HAL_Delay(500);
+	  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, GPIO_PIN_RESET);
+	  HAL_Delay(500);
+	  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_SET);
+	  HAL_Delay(500);
+	  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_RESET);
+	  HAL_Delay(500);
+	  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_15, GPIO_PIN_SET);
+	  HAL_Delay(500);
+	  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_15, GPIO_PIN_RESET);
+	  HAL_Delay(500);
+	}
+
+}
+
+//-------------------------------------------
+
+void rotate(animation_delay_up, animation_delay_down) {
+	  /*Вращение туда-сюда*/
+	uint8_t led_mask = 0x01;
+	int btn_state = GPIO_PIN_RESET;
+	int prev_btn_state = GPIO_PIN_RESET;
+	btn_state = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0);
+	if (btn_state != prev_btn_state) {
+	   update_state_downcount = 0;
+	}
+	prev_btn_state = btn_state;
+	update_state_downcount--;
+	if (update_state_downcount < 0) {
+	   if (btn_state == GPIO_PIN_SET) {
+	   update_state_downcount = animation_delay_down;
+	   led_mask = led_mask << 1 | led_mask >> 3; //сдвиг маски на 1 бит влево и 3 бита вправо и исользование побитового или
+	   }
+	   else {
+	   update_state_downcount = animation_delay_up;
+	   led_mask = led_mask >> 1 | led_mask << 3;
+	   }
+	   led_mask &= 0x0F;
+	   HAL_GPIO_WritePin(GPIOD, 0xF000, GPIO_PIN_RESET);
+	   HAL_GPIO_WritePin(GPIOD, led_mask << 12, GPIO_PIN_SET); //сдвиг маски на 12 битов влево
+	   }
+	   HAL_Delay(1);
+}

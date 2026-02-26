@@ -21,7 +21,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "led.h"
+#include "ADC.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -39,6 +40,8 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+I2S_HandleTypeDef hi2s2;
+DMA_HandleTypeDef hdma_spi2_tx;
 
 /* USER CODE BEGIN PV */
 
@@ -47,6 +50,8 @@
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
+static void MX_DMA_Init(void);
+static void MX_I2S2_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -62,6 +67,7 @@ static void MX_GPIO_Init(void);
   */
 int main(void)
 {
+
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
@@ -84,14 +90,11 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
+  MX_I2S2_Init();
   /* USER CODE BEGIN 2 */
-  uint8_t led_mask = 0x01;
-  int animation_delay_up = 100;
-  int animation_delay_down = 50;
-  int update_state_downcount = 0;
-  int btn_state = GPIO_PIN_RESET;
-  int prev_btn_state = GPIO_PIN_RESET;
-  int count = 0;
+
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -101,86 +104,11 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-//	  if(HAL_GPIO_ReadPin (GPIOA, GPIO_PIN_0) == 0)
-//	  {
-//		   /*Одновременное моргание*/
-//		  HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14|GPIO_PIN_15);
-//		  HAL_Delay(100);
-//	  }
-//	  else
-//	  {
-//
-//
-//		  /*Поочередное моргание*/
-//		  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14|GPIO_PIN_15, GPIO_PIN_RESET);
-//		  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_SET);
-//		  HAL_Delay(500);
-//		  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_12, GPIO_PIN_RESET);
-//		  HAL_Delay(500);
-//		  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, GPIO_PIN_SET);
-//		  HAL_Delay(500);
-//		  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, GPIO_PIN_RESET);
-//		  HAL_Delay(500);
-//		  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_SET);
-//		  HAL_Delay(500);
-//		  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_14, GPIO_PIN_RESET);
-//		  HAL_Delay(500);
-//		  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_15, GPIO_PIN_SET);
-//		  HAL_Delay(500);
-//		  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_15, GPIO_PIN_RESET);
-//		  HAL_Delay(500);
-//	  }
 
-	  	  /*Вращение туда-сюда*/
-	   btn_state = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0);
-	   if (btn_state != prev_btn_state) {
-		   update_state_downcount = 0;
-	   }
-	   prev_btn_state = btn_state;
-	   update_state_downcount--;
-	   if (update_state_downcount < 0) {
-		   if (btn_state == GPIO_PIN_SET) {
-		   update_state_downcount = animation_delay_down;
-		   led_mask = led_mask << 1 | led_mask >> 3; //сдвиг маски на 1 бит влево и 3 бита вправо и исользование побитового или
-		   }
-		   else {
-		   update_state_downcount = animation_delay_up;
-		   led_mask = led_mask >> 1 | led_mask << 3;
-		   }
-		   led_mask &= 0x0F;
-		   HAL_GPIO_WritePin(GPIOD, 0xF000, GPIO_PIN_RESET);
-		   HAL_GPIO_WritePin(GPIOD, led_mask << 12, GPIO_PIN_SET); //сдвиг маски на 12 битов влево
-	   	   }
-	   	   HAL_Delay(1);
+//	  blinking();
+	  rotate(100,50);
+//	  fire_mask();
 
-
-//  	  /*Зажигание светодиодов по маске*/
-//	  btn_state = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0);
-//	  if (btn_state == GPIO_PIN_SET && prev_btn_state == GPIO_PIN_RESET) {
-//		  count++;
-//		  led_mask = 0x00;
-//		  if (count == 1) {
-//			  led_mask =  led_mask | 0x01;
-//		  	  }
-//		  else if (count == 2) {
-//
-//			  led_mask =  led_mask | 0x08;
-//		  }
-//		  else if (count == 3) {
-//			  led_mask =  led_mask  0x03;
-//		  }
-//		  else {
-//			  count = 0;
-//		  }
-//		  led_mask &= 0x0F;
-//		  HAL_GPIO_WritePin(GPIOD, 0xF000, GPIO_PIN_RESET);
-//		  HAL_GPIO_WritePin(GPIOD, led_mask << 12, GPIO_PIN_SET); //сдвиг маски на 12 битов влево
-//		  HAL_Delay(50);
-//
-//	  }
-//	  prev_btn_state = btn_state;
-//
-//	  HAL_Delay(1);
   }
   /* USER CODE END 3 */
 }
@@ -194,6 +122,14 @@ void SystemClock_Config(void)
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
 
+  /** Macro to configure the PLL multiplication factor
+  */
+  __HAL_RCC_PLL_PLLM_CONFIG(8);
+
+  /** Macro to configure the PLL clock source
+  */
+  __HAL_RCC_PLL_PLLSOURCE_CONFIG(RCC_PLLSOURCE_HSI);
+
   /** Configure the main internal regulator output voltage
   */
   __HAL_RCC_PWR_CLK_ENABLE();
@@ -206,6 +142,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -227,6 +164,56 @@ void SystemClock_Config(void)
 }
 
 /**
+  * @brief I2S2 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_I2S2_Init(void)
+{
+
+  /* USER CODE BEGIN I2S2_Init 0 */
+
+  /* USER CODE END I2S2_Init 0 */
+
+  /* USER CODE BEGIN I2S2_Init 1 */
+
+  /* USER CODE END I2S2_Init 1 */
+  hi2s2.Instance = SPI2;
+  hi2s2.Init.Mode = I2S_MODE_MASTER_TX;
+  hi2s2.Init.Standard = I2S_STANDARD_PHILIPS;
+  hi2s2.Init.DataFormat = I2S_DATAFORMAT_16B;
+  hi2s2.Init.MCLKOutput = I2S_MCLKOUTPUT_ENABLE;
+  hi2s2.Init.AudioFreq = I2S_AUDIOFREQ_192K;
+  hi2s2.Init.CPOL = I2S_CPOL_LOW;
+  hi2s2.Init.ClockSource = I2S_CLOCK_PLL;
+  hi2s2.Init.FullDuplexMode = I2S_FULLDUPLEXMODE_DISABLE;
+  if (HAL_I2S_Init(&hi2s2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN I2S2_Init 2 */
+
+  /* USER CODE END I2S2_Init 2 */
+
+}
+
+/**
+  * Enable DMA controller clock
+  */
+static void MX_DMA_Init(void)
+{
+
+  /* DMA controller clock enable */
+  __HAL_RCC_DMA1_CLK_ENABLE();
+
+  /* DMA interrupt init */
+  /* DMA1_Stream4_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Stream4_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Stream4_IRQn);
+
+}
+
+/**
   * @brief GPIO Initialization Function
   * @param None
   * @retval None
@@ -234,9 +221,14 @@ void SystemClock_Config(void)
 static void MX_GPIO_Init(void)
 {
   GPIO_InitTypeDef GPIO_InitStruct = {0};
+  /* USER CODE BEGIN MX_GPIO_Init_1 */
+
+  /* USER CODE END MX_GPIO_Init_1 */
 
   /* GPIO Ports Clock Enable */
+  __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOB_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
@@ -255,6 +247,9 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
+  /* USER CODE BEGIN MX_GPIO_Init_2 */
+
+  /* USER CODE END MX_GPIO_Init_2 */
 }
 
 /* USER CODE BEGIN 4 */
@@ -275,8 +270,7 @@ void Error_Handler(void)
   }
   /* USER CODE END Error_Handler_Debug */
 }
-
-#ifdef  USE_FULL_ASSERT
+#ifdef USE_FULL_ASSERT
 /**
   * @brief  Reports the name of the source file and the source line number
   *         where the assert_param error has occurred.
@@ -288,7 +282,7 @@ void assert_failed(uint8_t *file, uint32_t line)
 {
   /* USER CODE BEGIN 6 */
   /* User can add his own implementation to report the file name and line number,
-     ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
+ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */

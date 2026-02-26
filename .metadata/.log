@@ -1,0 +1,516 @@
+!SESSION 2026-02-21 12:26:24.843 -----------------------------------------------
+eclipse.buildId=Version 2.0.0
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-02-21 12:27:20.562
+!MESSAGE Log4j2 initialized with config file C:\Users\toluz\STM32\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-02-21 12:27:25.745
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-02-21 12:27:26.974
+!MESSAGE Executed PowerShell command powershell.exe -Command "Get-CimInstance -ClassName Win32_SerialPort | Select-Object -ExpandProperty DeviceID":
+COM1
+
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-02-21 12:27:26.975
+!MESSAGE port: COM1
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2026-02-21 12:27:52.610
+!MESSAGE No repository found at https://sw-center.st.com/stm32cubeide/updatesite1.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2026-02-21 12:28:14.584
+!MESSAGE No repository found at https://sw-center.st.com/stm32cubeide/openstlinux/updatesite1.
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-02-21 12:30:45.932
+!MESSAGE Indexed 'test' (19 sources, 106 headers) in 1,85 sec: 8 200 declarations; 30 980 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0,37 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-02-21 12:35:37.254
+!MESSAGE Indexed 'test' (19 sources, 106 headers) in 1,28 sec: 8 200 declarations; 30 980 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0,37 %)
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-02-21 12:58:32.651
+!MESSAGE Executed PowerShell command powershell.exe -Command "Get-CimInstance -ClassName Win32_SerialPort | Select-Object -ExpandProperty DeviceID":
+COM1
+COM3
+
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-02-21 12:58:32.652
+!MESSAGE port: COM1
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-02-21 12:58:32.652
+!MESSAGE port: COM3
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-02-21 15:46:35.771
+!MESSAGE Indexed 'test' (21 sources, 108 headers) in 1,18 sec: 8 215 declarations; 31 148 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0,37 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-02-21 16:05:15.705
+!MESSAGE Indexed 'test' (21 sources, 110 headers) in 2,5 sec: 8 205 declarations; 31 612 references; 1 unresolved inclusions; 42 syntax errors; 147 unresolved names (0,37 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-02-21 16:24:15.894
+!MESSAGE Indexed 'test' (23 sources, 119 headers) in 1,17 sec: 10 738 declarations; 41 170 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0,46 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-02-21 17:01:18.879
+!MESSAGE Indexed 'test' (23 sources, 119 headers) in 1,16 sec: 10 738 declarations; 41 170 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0,46 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-02-21 17:33:32.328
+!MESSAGE Indexed 'test' (23 sources, 119 headers) in 1,34 sec: 10 738 declarations; 41 170 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0,46 %)
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-02-21 17:45:45.986
+!MESSAGE Executed PowerShell command powershell.exe -Command "Get-CimInstance -ClassName Win32_SerialPort | Select-Object -ExpandProperty DeviceID":
+COM1
+
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-02-21 17:45:45.986
+!MESSAGE port: COM1
+!SESSION 2026-02-22 13:30:27.702 -----------------------------------------------
+eclipse.buildId=Version 2.0.0
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-02-22 13:30:32.323
+!MESSAGE Log4j2 initialized with config file C:\Users\toluz\STM32\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-02-22 13:30:38.179
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-02-22 13:30:40.173
+!MESSAGE Executed PowerShell command powershell.exe -Command "Get-CimInstance -ClassName Win32_SerialPort | Select-Object -ExpandProperty DeviceID":
+COM1
+
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-02-22 13:30:40.174
+!MESSAGE port: COM1
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2026-02-22 13:31:02.515
+!MESSAGE No repository found at https://sw-center.st.com/stm32cubeide/updatesite1.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2026-02-22 13:31:02.599
+!MESSAGE No repository found at https://sw-center.st.com/stm32cubeide/openstlinux/updatesite1.
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:04.567
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:04.581
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:04.582
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:04.583
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:04.586
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:04.587
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:04.601
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:04.602
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:04.603
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:04.604
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:04.605
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:04.606
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:04.608
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:04.608
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:05.111
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:05.112
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:05.112
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:05.113
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:05.206
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:05.206
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:05.207
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:05.208
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:05.209
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:05.209
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:05.591
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:05.591
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:06.143
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:06.143
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:06.160
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:06.161
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:06.163
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:06.163
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:06.165
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:06.165
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:06.167
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:06.168
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-02-22 13:31:17.870
+!MESSAGE Indexed 'active-front-end' (202 sources, 680 headers) in 11,5 sec: 50 687 declarations; 230 690 references; 1 unresolved inclusions; 571 syntax errors; 1 294 unresolved names (0,46 %)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:39.842
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:39.845
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:39.848
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:48.445
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:48.446
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:48.446
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 13:31:48.447
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-02-22 18:01:17.384
+!MESSAGE Executed PowerShell command powershell.exe -Command "Get-CimInstance -ClassName Win32_SerialPort | Select-Object -ExpandProperty DeviceID":
+COM1
+COM3
+
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-02-22 18:01:17.384
+!MESSAGE port: COM1
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-02-22 18:01:17.385
+!MESSAGE port: COM3
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-02-22 18:01:23.915
+!MESSAGE Executed PowerShell command powershell.exe -Command "Get-CimInstance -ClassName Win32_SerialPort | Select-Object -ExpandProperty DeviceID":
+COM1
+
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-02-22 18:01:23.916
+!MESSAGE port: COM1
+!SESSION 2026-02-22 18:23:44.528 -----------------------------------------------
+eclipse.buildId=Version 2.0.0
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2026-02-22 18:23:46.627
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-02-22 18:23:50.106
+!MESSAGE Log4j2 initialized with config file C:\Users\toluz\STM32\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 18:23:51.434
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 18:23:51.535
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 18:23:51.546
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 18:23:51.549
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 18:23:51.555
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 18:23:51.555
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 18:23:51.574
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 18:23:51.576
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 18:23:51.578
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 18:23:51.579
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 18:23:51.581
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 18:23:51.583
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 18:23:52.400
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 18:23:52.400
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-02-22 18:23:55.839
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-02-22 18:23:57.644
+!MESSAGE Executed PowerShell command powershell.exe -Command "Get-CimInstance -ClassName Win32_SerialPort | Select-Object -ExpandProperty DeviceID":
+COM1
+
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-02-22 18:23:57.645
+!MESSAGE port: COM1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain.ui 1 1 2026-02-22 18:24:11.017
+!MESSAGE Leaving project(s) build(s) configuration(s) fixer without reaching a valid state...
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2026-02-22 18:24:20.588
+!MESSAGE No repository found at https://sw-center.st.com/stm32cubeide/updatesite1.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2026-02-22 18:24:20.806
+!MESSAGE No repository found at https://sw-center.st.com/stm32cubeide/openstlinux/updatesite1.
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 18:25:28.102
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 18:25:28.103
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 18:25:28.104
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 18:25:28.104
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 18:25:58.771
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 18:25:58.773
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-22 18:25:58.774
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+!SESSION 2026-02-23 14:20:26.081 -----------------------------------------------
+eclipse.buildId=Version 2.0.0
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2026-02-23 14:20:27.606
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-02-23 14:20:30.284
+!MESSAGE Log4j2 initialized with config file C:\Users\toluz\STM32\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:31.383
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:31.480
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:31.488
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:31.491
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:31.497
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:31.497
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:31.513
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:31.514
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:31.516
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:31.517
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:31.518
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:31.520
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:32.320
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:32.321
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:33.957
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:33.958
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:33.960
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:33.961
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:33.964
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:33.964
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:34.361
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:34.362
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:35.152
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:35.153
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:35.160
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:35.162
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:35.163
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:35.164
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:35.165
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:35.166
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:35.168
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:35.168
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-02-23 14:20:46.882
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-02-23 14:20:49.273
+!MESSAGE Executed PowerShell command powershell.exe -Command "Get-CimInstance -ClassName Win32_SerialPort | Select-Object -ExpandProperty DeviceID":
+COM1
+
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-02-23 14:20:49.274
+!MESSAGE port: COM1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:56.819
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:56.820
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:56.820
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 14:20:56.821
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
+
+!ENTRY org.eclipse.core.jobs 4 2 2026-02-23 14:29:55.089
+!MESSAGE An internal error occurred during: "Open Declaration".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.cdt.core.dom.ast.IASTFileLocation.getNodeOffset()" because "loc" is null
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.getCElementForName(OpenDeclarationsJob.java:665)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.convertToCElements(OpenDeclarationsJob.java:632)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.navigateViaCElements(OpenDeclarationsJob.java:676)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.runOnAST(OpenDeclarationsJob.java:325)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:231)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.performNavigation(OpenDeclarationsJob.java:171)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.run(OpenDeclarationsJob.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2026-02-23 16:02:07.738
+!MESSAGE An internal error occurred during: "Open Declaration".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.cdt.core.dom.ast.IASTFileLocation.getNodeOffset()" because "loc" is null
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.getCElementForName(OpenDeclarationsJob.java:665)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.convertToCElements(OpenDeclarationsJob.java:632)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.navigateViaCElements(OpenDeclarationsJob.java:676)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.runOnAST(OpenDeclarationsJob.java:325)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:231)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.performNavigation(OpenDeclarationsJob.java:171)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.run(OpenDeclarationsJob.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2026-02-23 16:02:16.553
+!MESSAGE An internal error occurred during: "Open Declaration".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.cdt.core.dom.ast.IASTFileLocation.getNodeOffset()" because "loc" is null
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.getCElementForName(OpenDeclarationsJob.java:665)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.convertToCElements(OpenDeclarationsJob.java:632)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.navigateViaCElements(OpenDeclarationsJob.java:676)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.runOnAST(OpenDeclarationsJob.java:325)
+	at org.eclipse.cdt.internal.core.model.ASTCache.runOnAST(ASTCache.java:231)
+	at org.eclipse.cdt.internal.ui.editor.ASTProvider.runOnAST(ASTProvider.java:338)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.performNavigation(OpenDeclarationsJob.java:171)
+	at org.eclipse.cdt.internal.ui.search.actions.OpenDeclarationsJob.run(OpenDeclarationsJob.java:147)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 1 1 2026-02-23 18:35:29.772
+!MESSAGE No matching toolchain installed: com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.12.3.rel1
