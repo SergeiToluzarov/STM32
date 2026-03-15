@@ -106,8 +106,8 @@ int main(void)
     /* USER CODE BEGIN 3 */
 
 //	  blinking();
-	  rotate(100,50);
-//	  fire_mask();
+//	  rotate(100,50);
+	  fire_mask();
 
   }
   /* USER CODE END 3 */
